@@ -27,7 +27,7 @@
         <div class="flex items-center gap-9">
             <div class="flex justify-between items-center gap-2 rounded-full bg-[#F4F7FF] py-4 pl-6 pr-6">
                 <img src="assets/images/checkbox.png" alt="Checkbox icon">
-                <p id="task-completed-counter" class="text-3xl font-bold">23</p>
+                <div id="task-completed-counter" class="text-3xl font-bold">23</div>
             </div>
             <div>
                 <button id="theme-btn" class="cursor-pointer p-3 rounded-full bg-[#F4F7FF]">
@@ -88,7 +88,7 @@
                     <div class="card-body p-6">
                         <div class="flex flex-col gap-4 pb-4">
                             <div class="badge bg-white text-[#00303C] px-4 py-2 rounded-lg">ShopEase</div>
-                            <h2 class="card-title text-2xl font-medium">Fix Mobile Button Issue</h2>
+                            <h2 class="card-title task-title text-2xl font-medium">Fix Mobile Button Issue</h2>
                             <p class="text-sm bg-white text-gray-500 p-4 rounded-lg">
                                 Debug using Chrome DevTools, check for overlapping
                                 <span id="task1-details" class="hidden">
@@ -113,7 +113,7 @@
                     <div class="card-body p-6">
                         <div class="flex flex-col gap-4 pb-4">
                             <div class="badge bg-white text-[#00303C] px-4 py-2 rounded-lg">CloudSync</div>
-                            <h2 class="card-title text-2xl font-medium">Add Dark Mode</h2>
+                            <h2 class="card-title task-title text-2xl font-medium">Add Dark Mode</h2>
                             <p class="text-sm bg-white text-gray-500 p-4 rounded-lg">
                                 Store the user's preference in localStorage, update CSS variables
                                 <span id="task2-details" class="hidden">
@@ -139,7 +139,7 @@
                     <div class="card-body p-6">
                         <div class="flex flex-col gap-4 pb-4">
                             <div class="badge bg-white text-[#00303C] px-4 py-2 rounded-lg">SwiftPay</div>
-                            <h2 class="card-title text-2xl font-medium">Optimize Home page</h2>
+                            <h2 class="card-title task-title text-2xl font-medium">Optimize Home page</h2>
                             <p class="text-sm bg-white text-gray-500 p-4 rounded-lg">
                                 Debug using Chrome DevTools, check for overlapping
                                 <span id="task3-details" class="hidden">
@@ -164,7 +164,7 @@
                     <div class="card-body p-6">
                         <div class="flex flex-col gap-4 pb-4">
                             <div class="badge bg-white text-[#00303C] px-4 py-2 rounded-lg">Meta</div>
-                            <h2 class="card-title text-2xl font-medium">Add new emoji 🤲</h2>
+                            <h2 class="card-title task-title text-2xl font-medium">Add new emoji 🤲</h2>
                             <p class="text-sm bg-white text-gray-500 p-4 rounded-lg">
                                 Debug using Chrome DevTools, check for overlapping elements,
                                 <span id="task4-details" class="hidden">
@@ -189,7 +189,7 @@
                     <div class="card-body p-6">
                         <div class="flex flex-col gap-4 pb-4">
                             <div class="badge bg-white text-[#00303C] px-4 py-2 rounded-lg">Google LLC</div>
-                            <h2 class="card-title text-2xl font-medium">Integrate OpenAI API</h2>
+                            <h2 class="card-title task-title text-2xl font-medium">Integrate OpenAI API</h2>
                             <p class="text-sm bg-white text-gray-500 p-4 rounded-lg">
                                 Debug using Chrome DevTools, check for overlapping elements,
                                 <span id="task5-details" class="hidden">
@@ -214,7 +214,7 @@
                     <div class="card-body p-6">
                         <div class="flex flex-col gap-4 pb-4">
                             <div class="badge bg-white text-[#00303C] px-4 py-2 rounded-lg">Glassdoor</div>
-                            <h2 class="card-title text-2xl font-medium">Improve Job searching</h2>
+                            <h2 class="card-title task-title text-2xl font-medium">Improve Job searching</h2>
                             <p class="text-sm bg-white text-gray-500 p-4 rounded-lg">
                                 Debug using Chrome DevTools, check for overlapping elements,
                                 <span id="task6-details" class="hidden">
@@ -264,6 +264,9 @@
     <script src="assets/scripts/calender.js"></script>
     <script src="assets/scripts/clear-history.js"></script>
     <script src="assets/scripts/blogredirect.js"></script>
+    <script src="assets/scripts/task-assigned-count.js"></script>
+    <script src="assets/scripts/task-completed-count.js"></script>
+    <script src="assets/scripts/task-completed-btn-disabled.js"></script>
+    <script src="assets/scripts/push-notifications.js"></script>
 </body>
-
 </html>
