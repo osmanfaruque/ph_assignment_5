@@ -13,7 +13,9 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="poppins m-0 p-0 bg-[#F4F7FF] px-36 py-6 flex flex-col gap-5">
@@ -23,21 +25,60 @@
             <h1 class="text-4xl ">Dev<span class="font-bold">Board</span></h1>
         </div>
         <div class="flex items-center gap-9">
-            <div class="flex items-center gap-2">
+            <div class="flex justify-between items-center gap-2 rounded-full bg-[#F4F7FF] py-4 pl-6 pr-6">
                 <img src="assets/images/checkbox.png" alt="Checkbox icon">
                 <p id="task-counter" class="text-3xl font-bold">23</p>
             </div>
             <div>
-                <button id="theme-btn" class="cursor-pointer">
+                <button id="theme-btn" class="cursor-pointer p-3 rounded-full bg-[#F4F7FF]">
                     <img src="assets/images/theme-btn.png" alt="Theme button">
                 </button>
             </div>
         </div>
     </nav>
-    <main class="bg-white rounded-2xl px-6 py-4 flex gap-6">
+    <main class="bg-[#F4F7FF] rounded-2xl py-4 flex gap-6">
         <!-- Task Assigned Section -->
-        <section class="w-9/12 bg-cyan-500 rounded-2xl">
-            
+        <section class="w-9/12 bg-white rounded-2xl p-6">
+            <div class="grid grid-cols-4 gap-4">
+                <!-- Task Assigned Card -->
+                <div class="card rounded-2xl bg-[#F4F7FF]">
+                    <div class="card-body p-7">
+                        <div class="flex items-center justify-center gap-5">
+                            <div class="p-5 bg-white rounded-full">
+                                <img src="assets/images/checkbox.png" alt="Task assigned icon">
+                            </div>
+                            <div>
+                                <div class=" text-[#00303C]">Task Assigned</div>
+                                <div class="text-2xl font-bold">06</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Announcement Card -->
+                <div class="card rounded-2xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] pl-10 py-4 col-span-2">
+                    <div class="card-body p-4">
+                        <button id="discover-btn" class="flex justify-start items-center gap-8">
+                            <img src="assets/images/board.png" alt="Board icon">
+                            <div>
+                                <div class="text-2xl font-medium text-left text-white ">Discover Something <br>New
+                                    Today!</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- Date Card -->
+                <div class="card rounded-2xl bg-[#F4F7FF] py-8 px-6">
+                    <div class="flex justify-center items-center gap-4">
+                        <div class="p-5 bg-white rounded-full">
+                            <img src="assets/images/calender.png" alt="Calender icon">
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 id="current-day" class="text-2xl text-[#00303C]"> Wed ,</h1>
+                            <h1 id="current-date" class="text-2xl font-bold text-[#00303C]">Jul 28 2025</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Activity Log -->
         <section class="w-3/12 bg-white rounded-2xl pt-6 px-8">
@@ -46,17 +87,19 @@
                     <img src="assets/images/activity.png" alt="Activity icon">
                     <p class="text-2xl font-medium">Activity Log</p>
                 </div>
-                <button id="clear-history-btn" class="bg-[#3752FD] text-white px-5 py-3 rounded-lg border border-transparent hover:bg-white hover:text-[#3752FD] hover:border-[#3752FD]">Clear History</button>
+                <button id="clear-history-btn"
+                    class="bg-[#3752FD] text-white px-5 py-3 rounded-lg border border-transparent hover:bg-white hover:text-[#3752FD] hover:border-[#3752FD]">Clear
+                    History</button>
             </div>
             <hr class="border-gray-300 border-dashed -mx-8 w-[calc(100%+4rem)]">
             <div class="flex flex-col gap-4">
                 <div class="flex flex-col justify-between items-center gap-7 py-6">
                     <div class="p-3 bg-[#F4F7FF] rounded-lg">
                         <p class="text-sm">You have Completed The Task Add Dark Mode at 12:48:15 PM</p>
-                      </div>
-                      <div class="p-3 bg-[#F4F7FF] rounded-lg">
+                    </div>
+                    <div class="p-3 bg-[#F4F7FF] rounded-lg">
                         <p class="text-sm">You have Completed The Task Add Dark Mode at 12:48:15 PM</p>
-                      </div>
+                    </div>
                 </div>
             </div>
         </section>
