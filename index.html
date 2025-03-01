@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body class="poppins m-0 p-0 bg-[#F4F7FF] px-36 py-6">
+<body class="poppins m-0 p-0 bg-[#F4F7FF] px-36 py-6 flex flex-col gap-5">
     <nav class="flex justify-between items-center bg-white rounded-2xl px-6 py-4">
         <div class="flex items-center gap-2">
             <img src="assets/images/logo.png" alt="Logo">
@@ -28,15 +28,38 @@
                 <p id="task-counter" class="text-3xl font-bold">23</p>
             </div>
             <div>
-                <button class="cursor-pointer">
+                <button id="theme-btn" class="cursor-pointer">
                     <img src="assets/images/theme-btn.png" alt="Theme button">
                 </button>
             </div>
         </div>
     </nav>
-    <main class="bg-white rounded-2xl px-6 py-4">
-        yello
-        
+    <main class="bg-white rounded-2xl px-6 py-4 flex gap-6">
+        <!-- Task Assigned Section -->
+        <section class="w-9/12 bg-cyan-500 rounded-2xl">
+            
+        </section>
+        <!-- Activity Log -->
+        <section class="w-3/12 bg-cyan-500 rounded-2xl pt-6 px-8">
+            <div class="flex flex-col justify-between items-center gap-4 pb-6">
+                <div class="flex justify-center items-center gap-2">
+                    <img src="assets/images/activity.png" alt="Activity icon">
+                    <p class="text-2xl font-medium">Activity Log</p>
+                </div>
+                <button id="clear-history-btn" class="bg-[#3752FD] text-white px-5 py-3 rounded-lg">Clear History</button>
+            </div>
+            <hr class="border-gray-300 border-dashed -mx-8 w-[calc(100%+4rem)]">
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col justify-between items-center gap-7 py-6">
+                    <div class="p-3 bg-gray-100 rounded-lg">
+                        <p class="text-sm">You have Completed The Task Add Dark Mode at 12:48:15 PM</p>
+                      </div>
+                      <div class="p-3 bg-gray-100 rounded-lg">
+                        <p class="text-sm">You have Completed The Task Add Dark Mode at 12:48:15 PM</p>
+                      </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 </body>
