@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Change appearance to show it's completed
         button.classList.remove('bg-[#3752FD]', 'text-white', 'hover:bg-white', 'hover:text-[#3752FD]', 'hover:border-[#3752FD]');
         button.classList.add('bg-gray-300', 'text-gray-600', 'cursor-not-allowed');
-        button.textContent = 'Completed ✓';
+        button.textContent = 'Completed';
     }
     
     // Add event listeners to all task completed buttons

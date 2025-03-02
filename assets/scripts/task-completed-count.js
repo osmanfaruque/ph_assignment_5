@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateTaskCompletedCount() {
         taskCompletedCount++;
         taskCompletedCounterElement.textContent = taskCompletedCount;
+        
+        // Alert for board update
+        alert('Board Updated Successfully');
     }
     
     // Add event listeners to all task completed buttons
