@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Check if all tasks are completed
         if (taskAssignedCount === 0) {
             setTimeout(() => {
-                alert('All tasks completed!');
+                alert('Congrats! You have completed all the Current task');
             }, 300);
         }
     }
