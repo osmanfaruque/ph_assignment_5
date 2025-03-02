@@ -1,15 +1,25 @@
 // Array of eye-soothing colors
 const colors = [
-    '#8FB8E6', // Even darker blue
-    '#9BC1AD', // Even darker mint
-    '#E6BC8F', // Even darker peach
-    '#BFBFBF', // Even darker gray
-    '#8FB890', // Even darker mint green
-    '#C9A3CD', // Even darker lavender
-    '#E6B589', // Even darker orange
-    '#8FCCD4', // Even darker cyan
-    '#CCD48F', // Even darker lime
-    '#E091A7'  // Even darker pink
+    '#8FB8E6', // blue
+    '#9BC1AD', // mint
+    '#E6BC8F', // peach
+    '#BFBFBF', // gray
+    '#8FB890', // mint green
+    '#C9A3CD', // lavender
+    '#E6B589', // orange
+    '#8FCCD4', // cyan
+    '#CCD48F', // lime
+    '#E091A7', // pink
+    '#A8DADC', // Light Cyan
+    '#457B9D', // Steel Blue
+    '#F4A261', // Sandy Brown
+    '#2A9D8F', // Light Sea Green
+    '#E9C46A', // Sandstorm
+    '#264653', // Charcoal
+    '#F4E1D2', // Linen
+    '#81B29A', // Sage
+    '#F2CC8F', // Buff
+    '#E76F51'  // Terra Cotta
 ];
 
 let currentColorIndex = 0;
