@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateTaskAssignedCount() {
         taskAssignedCount--;
         taskAssignedCountElement.textContent = taskAssignedCount.toString().padStart(2, '0');
+
+        
         
         // Check if all tasks are completed
         if (taskAssignedCount === 0) {
@@ -18,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 300);
         }
     }
+
+
     
     // Add event listeners to all task completed buttons
     taskCompletedButtons.forEach(button => {

@@ -19,7 +19,34 @@
 </head>
 
 <body id="body" class="poppins m-0 p-0 bg-[#F4F7FF] px-36 py-6 flex flex-col gap-5">
-    <nav class="flex justify-between items-center bg-white rounded-2xl px-6 py-4">
+
+    <!-- Add Task Form --><!-- Add Task -->
+    <section id="task-form" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+            <h2 class="text-xl font-semibold mb-4">Add New Task</h2>
+            
+            <form id="task-form">
+                <label class="block ">Company Name:</label>
+                <input type="text" id="task-badge" class="w-full border rounded-lg px-3 py-2 mb-4" required>
+
+                <label class="block ">Task Title:</label>
+                <input type="text" id="task-title" class="w-full border rounded-lg px-3 py-2 mb-4" required>
+    
+                <label class="block">Description:</label>
+                <textarea id="task-desc" class="w-full border rounded-lg px-3 py-2 mb-4" required></textarea>
+    
+                <label class="block ">Deadline:</label>
+                <input type="date" id="task-deadline" class="w-full border rounded-lg px-3 py-2 mb-4" required>
+    
+                <div class="flex justify-end gap-3">
+                    <button type="button" id="close-modal" class="px-4 py-2 bg-gray-400 text-white rounded-lg cursor-pointer border border-transparent hover:bg-white hover:text-gray-600 hover:border-gray-600">Cancel</button>
+                    <button type="submit" id="submit-task-btn" class="px-4 py-2 bg-blue-600 text-white rounded-lg cursor-pointer border border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600">Add Task</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <nav id="nav" class="flex justify-between items-center bg-white rounded-2xl px-6 py-4">
         <div class="flex items-center gap-2">
             <img src="assets/images/logo.png" alt="Logo">
             <h1 class="text-4xl ">Dev<span class="font-bold">Board</span></h1>
@@ -264,31 +291,7 @@
             </div>
         </section>
     </main>
-    <!-- Add Task -->
-    <section id="task-form" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden flex justify-center items-center">
-        <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-            <h2 class="text-xl font-semibold mb-4">Add New Task</h2>
-            
-            <form id="task-form">
-                <label class="block ">Company Name:</label>
-                <input type="text" id="task-badge" class="w-full border rounded-lg px-3 py-2 mb-4" required>
-
-                <label class="block ">Task Title:</label>
-                <input type="text" id="task-title" class="w-full border rounded-lg px-3 py-2 mb-4" required>
     
-                <label class="block">Description:</label>
-                <textarea id="task-desc" class="w-full border rounded-lg px-3 py-2 mb-4" required></textarea>
-    
-                <label class="block ">Deadline:</label>
-                <input type="date" id="task-deadline" class="w-full border rounded-lg px-3 py-2 mb-4" required>
-    
-                <div class="flex justify-end gap-3">
-                    <button type="button" id="close-modal" class="px-4 py-2 bg-gray-400 text-white rounded-lg cursor-pointer border border-transparent hover:bg-white hover:text-gray-600 hover:border-gray-600">Cancel</button>
-                    <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-lg cursor-pointer border border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600">Add Task</button>
-                </div>
-            </form>
-        </div>
-    </section>
     <script src="assets/scripts/theme-randomizer.js"></script>
     <script src="assets/scripts/calender.js"></script>
     <script src="assets/scripts/clear-history.js"></script>
