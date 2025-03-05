@@ -25,6 +25,11 @@
             <h1 class="text-4xl ">Dev<span class="font-bold">Board</span></h1>
         </div>
         <div class="flex items-center gap-9">
+            <div>
+                <button id="add-task-btn" class=" bg-[#3752FD] text-white px-5 py-3 rounded-lg border border-transparent hover:bg-white hover:text-[#3752FD] hover:border-[#3752FD] cursor-pointer">
+                    <i class="fa-solid fa-file-circle-plus fa-lg    "> Add task</i>
+                </button>
+            </div>
             <div class="flex justify-between items-center gap-2 rounded-full bg-[#F4F7FF] py-4 pl-6 pr-6">
                 <img src="assets/images/checkbox.png" alt="Checkbox icon">
                 <div id="task-completed-counter" class="text-3xl font-bold">23</div>
@@ -36,6 +41,7 @@
             </div>
         </div>
     </nav>
+    
     <main id="main" class="bg-[#F4F7FF] rounded-2xl flex gap-6">
         <!-- Task Assigned Section -->
         <section class="w-9/12 bg-white rounded-2xl p-6">
@@ -83,7 +89,7 @@
             </div>
             <hr class="border-gray-300 border-dashed -mx-6">
             <!-- Task list -->
-            <div class="grid grid-cols-3 gap-4 pt-8">
+            <div id="task-list-container" class="grid grid-cols-3 gap-4 pt-8">
                 <!-- Task 1 -->
                 <div class="card bg-[#F4F7FF]">
                     <div class="card-body p-6">
@@ -258,6 +264,31 @@
             </div>
         </section>
     </main>
+    <!-- Add Task -->
+    <section id="task-form" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+            <h2 class="text-xl font-semibold mb-4">Add New Task</h2>
+            
+            <form id="task-form">
+                <label class="block ">Company Name:</label>
+                <input type="text" id="task-badge" class="w-full border rounded-lg px-3 py-2 mb-4" required>
+
+                <label class="block ">Task Title:</label>
+                <input type="text" id="task-title" class="w-full border rounded-lg px-3 py-2 mb-4" required>
+    
+                <label class="block">Description:</label>
+                <textarea id="task-desc" class="w-full border rounded-lg px-3 py-2 mb-4" required></textarea>
+    
+                <label class="block ">Deadline:</label>
+                <input type="date" id="task-deadline" class="w-full border rounded-lg px-3 py-2 mb-4" required>
+    
+                <div class="flex justify-end gap-3">
+                    <button type="button" id="close-modal" class="px-4 py-2 bg-gray-400 text-white rounded-lg cursor-pointer border border-transparent hover:bg-white hover:text-gray-600 hover:border-gray-600">Cancel</button>
+                    <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-lg cursor-pointer border border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600">Add Task</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <script src="assets/scripts/theme-randomizer.js"></script>
     <script src="assets/scripts/calender.js"></script>
     <script src="assets/scripts/clear-history.js"></script>
@@ -266,6 +297,8 @@
     <script src="assets/scripts/task-completed-count.js"></script>
     <script src="assets/scripts/task-completed-btn-disabled.js"></script>
     <script src="assets/scripts/push-notifications.js"></script>
+    <script src="assets/scripts/AddTaskOverlay.js"></script>
+    <script src="assets/scripts/add-task-btn.js"></script>
 </body>
 
 </html>
