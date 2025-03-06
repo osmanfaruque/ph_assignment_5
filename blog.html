@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
-    <!-- google font -->
+    <title>Blog</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!-- daisyul -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <!-- DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
@@ -25,49 +23,41 @@
     </style>
 </head>
 
-<body class="font-poppings bg-blue-50 py-5  ">
-    <header class="mx-24 border-none rounded-2xl bg-white">
-        <nav class="flex items-center p-6 justify-between ">
-
+<body class="font-poppings bg-blue-50 py-5 px-4 sm:px-24">
+    <header class="mx-0 sm:mx-24 border-none rounded-2xl bg-white">
+        <nav class="flex items-center p-6 justify-between">
             <div class="flex items-center gap-1.5">
-                <img src="assets/images/logo.png" class="h-12" alt="">
-                <h1 class="text-color text-3xl">Dev<b>Board</b></h1>
+                <img class="w-9" src="assets/images/logo.png" class="h-12" alt="">
+                <h1 class="sm:text-3xl">Dev<b>Board</b></h1>
             </div>
-            <button id="back-to-desk-btn" class="btn text-white bg-[#3752FD]  rounded-lg px-6 py-5 ">Back to Desk</button>
+            <button id="back-to-desk-btn" class="btn text-white bg-[#3752FD] rounded-lg px-3 sm:px-6 py-2 sm:py-5">Back to Desk</button>
         </nav>
-
     </header>
-    <main class="px-24">
+    <main class="px-0 sm:px-24">
         <section class="flex flex-col gap-5">
             <div class="text-center pt-5"><b>Blogs</b></div>
 
-            <div class="bg-white rounded-lg ">
-                <p class="p-5 border-b-2 border-dashed  border-slate-300"><b>Question-1: What are the different ways to select an element in the DOM?</b></p>
-                <p class="p-5"> The different ways to select an element in the DOM are:<br>1.getElementById(),<br>2.getElementsByClassName(),<br>3.getElementsByTagName(),<br>4.querySelector(),<br>5.querySelectorAll()</p>
+            <div class="bg-white rounded-lg p-5">
+                <p class="border-b-2 border-dashed border-slate-300"><b>Question-1: What are the different ways to select an element in the DOM?</b></p>
+                <p>The different ways to select an element in the DOM are:<br>1.getElementById(),<br>2.getElementsByClassName(),<br>3.getElementsByTagName(),<br>4.querySelector(),<br>5.querySelectorAll()</p>
             </div>
-            <div class="bg-white rounded-lg ">
-                <p class="p-5 border-b-2 border-dashed  border-slate-300"><b>Question-2: What is the difference between innerHTML, innerText, and textContent ?</b></p>
-                <p class="p-5">innerHTML provides content with HTML tags, innerText gives only the visible text, and textContent provides all the text (including hidden text). </p>
+            <div class="bg-white rounded-lg p-5">
+                <p class="border-b-2 border-dashed border-slate-300"><b>Question-2: What is the difference between innerHTML, innerText, and textContent?</b></p>
+                <p>innerHTML provides content with HTML tags, innerText gives only the visible text, and textContent provides all the text (including hidden text).</p>
             </div>
-            <div class="bg-white rounded-lg ">
-                <p class="p-5 border-b-2 border-dashed  border-slate-300"><b>Question-3: What is event delegation in the DOM?</b></p>
-                <p class="p-5">In event delegation, you can attach a single event listener to a parent element instead of attaching listeners to individual child elements.</p>
+            <div class="bg-white rounded-lg p-5">
+                <p class="border-b-2 border-dashed border-slate-300"><b>Question-3: What is event delegation in the DOM?</b></p>
+                <p>In event delegation, you can attach a single event listener to a parent element instead of attaching listeners to individual child elements.</p>
             </div>
-            <div class="bg-white rounded-lg ">
-                <p class="p-5 border-b-2 border-dashed  border-slate-300"><b>Question-4: What is event bubbling in the DOM?</b></p>
-                <p class="p-5">If you click on a button, the event will first be triggered on the button, and then it will bubble up to its parent</p>
+            <div class="bg-white rounded-lg p-5">
+                <p class="border-b-2 border-dashed border-slate-300"><b>Question-4: What is event bubbling in the DOM?</b></p>
+                <p>If you click on a button, the event will first be triggered on the button, and then it will bubble up to its parent.</p>
             </div>
-            <div class="bg-white rounded-lg ">
-                <p class="p-5 border-b-2 border-dashed  border-slate-300"><b>Question-5: How do you create, add, and remove elements using JavaScript?</b></p>
-                <p class="p-5">1.To create element:<br>We use document.createElement() to create a new element. <br>2.To add element: <br>
-
-                  We use appendChild() or insertBefore() to add the created element to a parent. <br>3.To remove element: <br>
-
-                    We use removeChild() to remove an element from its parent.</p>
+            <div class="bg-white rounded-lg p-5">
+                <p class="border-b-2 border-dashed border-slate-300"><b>Question-5: How do you create, add, and remove elements using JavaScript?</b></p>
+                <p>1.To create an element:<br>We use document.createElement() to create a new element.<br>2.To add an element:<br>We use appendChild() or insertBefore() to add the created element to a parent.<br>3.To remove an element:<br>We use removeChild() to remove an element from its parent.</p>
             </div>
-            
         </section>
-
     </main>
     <script src="assets/scripts/back-to-desk.js"></script>
 </body>
