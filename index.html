@@ -49,6 +49,7 @@
         </div>
     </section>
 
+    <!-- Navbar -->
     <nav id="nav" class="flex justify-between items-center bg-white rounded-2xl px-3 sm:px-6 py-2 sm:py-4">
         <div class="flex items-center gap-1 sm:gap-2">
             <img class="max-sm:w-8" src="assets/images/logo.png" alt="Logo">
@@ -61,7 +62,8 @@
                     <i class="fa-solid fa-file-circle-plus fa-lg"><span class="hidden sm:inline"> Add task</span></i>
                 </button>
             </div>
-            <div class="flex justify-between items-center gap-2 rounded-full bg-[#F4F7FF] py-1 sm:py-4 pl-2 sm:pl-6 pr-2 sm:pr-6">
+            <div
+                class="flex justify-between items-center gap-2 rounded-full bg-[#F4F7FF] py-1 sm:py-4 pl-2 sm:pl-6 pr-2 sm:pr-6">
                 <img class="max-sm:w-3" src="assets/images/checkbox.png" alt="Checkbox icon">
                 <div id="task-completed-counter" class="text-base sm:text-3xl font-bold">23</div>
             </div>
@@ -72,12 +74,12 @@
             </div>
         </div>
     </nav>
-    
-    <main id="main" class="bg-[#F4F7FF] rounded-2xl flex gap-6">
+
+    <main id="main" class="bg-[#F4F7FF] rounded-2xl flex flex-col sm:flex-row gap-6">
         <!-- Task Assigned Section -->
-        <section class="w-9/12 bg-white rounded-2xl p-6">
+        <section class="w-full sm:w-9/12 bg-white rounded-2xl p-3 sm:p-6">
             <!-- task assigned Card -->
-            <div class="grid grid-cols-4 gap-4 pb-6">
+            <div class="block max-sm:hidden grid grid-cols-4 gap-2 sm:gap-4 pb-6">
                 <!-- Total Task Assigned Card -->
                 <div class="card rounded-2xl bg-[#F4F7FF]">
                     <div class="card-body p-7">
@@ -118,9 +120,52 @@
                     </div>
                 </div>
             </div>
-            <hr class="border-gray-300 border-dashed -mx-6">
+            <!-- task assigned Card in smaller screens -->
+            <div class="hidden max-sm:block pb-6">
+                <div class="grid grid-cols-2 gap-3 sm:gap-6 pb-3">
+                    <!-- Total Task Assigned Card -->
+                    <div class="card rounded-2xl bg-[#F4F7FF] ">
+                        <div class="card-body">
+                            <div class="flex items-center justify-center gap-2">
+                                <div class="p-2 bg-white rounded-full">
+                                    <img src="assets/images/checkbox.png" alt="Task assigned icon">
+                                </div>
+                                <div>
+                                    <div class=" text-sm text-[#00303C]">Task Assigned</div>
+                                    <div id="task-assigned-count" class="text-xl font-bold">06</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Date Card -->
+                    <div class="card rounded-2xl bg-[#F4F7FF] p-4">
+                        <div class="flex justify-center items-center text-center gap-2">
+                            <div class="p-2 bg-white rounded-full">
+                                <img src="assets/images/calender.png" alt="Calender icon">
+                            </div>
+                            <div class="flex flex-col">
+                                <h1 id="current-day" class="text-base text-[#00303C]"> Wed ,</h1>
+                                <h1 id="current-date" class="text-base font-bold text-[#00303C]">Jul 28 2025</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Announcement Card -->
+                <button id="discover-btn"
+                    class="w-full card rounded-2xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] pl-10 py-4  cursor-pointer hover:shadow-lg">
+                    <div class="card-body p-2">
+                        <div class="flex justify-start items-center gap-4">
+                            <img class="max-sm:w-10" src="assets/images/board.png" alt="Board icon">
+                            <div>
+                                <div class="text-lg font-medium text-left text-white ">Discover Something <br>New Today!</div>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <hr class="border-gray-300 border-dashed -mx-3">
             <!-- Task list -->
-            <div id="task-list-container" class="grid grid-cols-3 gap-4 pt-8">
+            <div id="task-list-container" class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 sm:pt-8">
                 <!-- Task 1 -->
                 <div class="card bg-[#F4F7FF]">
                     <div class="card-body p-6">
@@ -275,7 +320,7 @@
             </div>
         </section>
         <!-- Activity Log -->
-        <section class="w-3/12 bg-white rounded-2xl pt-6 px-8">
+        <section class="w-full sm:w-3/12 bg-white rounded-2xl pt-6 px-8">
             <div class="flex flex-col justify-between items-center gap-4 pb-6">
                 <div class="flex justify-center items-center gap-2">
                     <img src="assets/images/activity.png" alt="Activity icon">
@@ -295,7 +340,7 @@
             </div>
         </section>
     </main>
-    
+
     <script src="assets/scripts/theme-randomizer.js"></script>
     <script src="assets/scripts/calender.js"></script>
     <script src="assets/scripts/clear-history.js"></script>
