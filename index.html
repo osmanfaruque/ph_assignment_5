@@ -18,11 +18,11 @@
         rel="stylesheet">
 </head>
 
-<body id="body" class="poppins m-0 p-0 bg-[#F4F7FF] px-36 py-6 flex flex-col gap-5">
+<body id="body" class="poppins m-0 p-0 bg-[#F4F7FF] px-6 sm:px-36 py-3 sm:py-6 flex flex-col gap-3 sm:gap-5">
 
     <!-- Add Task Form --><!-- Add Task -->
     <section id="task-form" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden flex justify-center items-center">
-        <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+        <div class="bg-white p-3 sm:p-6 rounded-lg shadow-lg w-full sm:w-96">
             <h2 class="text-xl font-semibold mb-4">Add New Task</h2>
 
             <form id="task-form">
@@ -49,25 +49,25 @@
         </div>
     </section>
 
-    <nav id="nav" class="flex justify-between items-center bg-white rounded-2xl px-6 py-4">
-        <div class="flex items-center gap-2">
-            <img src="assets/images/logo.png" alt="Logo">
-            <h1 class="text-4xl ">Dev<span class="font-bold">Board</span></h1>
+    <nav id="nav" class="flex justify-between items-center bg-white rounded-2xl px-3 sm:px-6 py-2 sm:py-4">
+        <div class="flex items-center gap-1 sm:gap-2">
+            <img class="max-sm:w-8" src="assets/images/logo.png" alt="Logo">
+            <h1 class="text-base sm:text-4xl ">Dev<span class="font-bold">Board</span></h1>
         </div>
-        <div class="flex items-center gap-9">
+        <div class="flex items-center gap-3 sm:gap-9">
             <div>
                 <button id="add-task-btn"
-                    class=" bg-[#3752FD] text-white px-5 py-3 rounded-lg border border-transparent hover:bg-white hover:text-[#3752FD] hover:border-[#3752FD] cursor-pointer">
-                    <i class="fa-solid fa-file-circle-plus fa-lg    "> Add task</i>
+                    class=" bg-[#3752FD] text-white px-2 sm:px-5 py-2 sm:py-3 rounded-lg border border-transparent hover:bg-white hover:text-[#3752FD] hover:border-[#3752FD] cursor-pointer">
+                    <i class="fa-solid fa-file-circle-plus fa-lg"><span class="hidden sm:inline"> Add task</span></i>
                 </button>
             </div>
-            <div class="flex justify-between items-center gap-2 rounded-full bg-[#F4F7FF] py-4 pl-6 pr-6">
-                <img src="assets/images/checkbox.png" alt="Checkbox icon">
-                <div id="task-completed-counter" class="text-3xl font-bold">23</div>
+            <div class="flex justify-between items-center gap-2 rounded-full bg-[#F4F7FF] py-1 sm:py-4 pl-2 sm:pl-6 pr-2 sm:pr-6">
+                <img class="max-sm:w-3" src="assets/images/checkbox.png" alt="Checkbox icon">
+                <div id="task-completed-counter" class="text-base sm:text-3xl font-bold">23</div>
             </div>
             <div>
-                <button id="theme-btn" class="cursor-pointer p-3 rounded-full bg-[#F4F7FF]">
-                    <img src="assets/images/theme-btn.png" alt="Theme button">
+                <button id="theme-btn" class="cursor-pointer p-1 sm:p-3 rounded-full bg-[#F4F7FF]">
+                    <img class="max-sm:w-5" src="assets/images/theme-btn.png" alt="Theme button">
                 </button>
             </div>
         </div>
