@@ -1,6 +1,7 @@
 // Function to handle task assigned count
 document.addEventListener('DOMContentLoaded', function() {
     const taskAssignedCountElement = document.getElementById('task-assigned-count');
+    const taskAssignedCountElementSm = document.getElementById('task-assigned-count-sm');
     const taskCompletedButtons = document.querySelectorAll('.task-completed-btn');
     
     // Initial count from the HTML
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateTaskAssignedCount() {
         taskAssignedCount--;
         taskAssignedCountElement.textContent = taskAssignedCount.toString().padStart(2, '0');
-
+        taskAssignedCountElementSm.textContent = taskAssignedCount.toString().padStart(2, '0');
         
         
         // Check if all tasks are completed
